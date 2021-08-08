@@ -1,0 +1,278 @@
+/* INICIO DE SESION Y FORMULARIO DE REGISTRO */
+body{
+    margin: 0px;
+}
+
+.LogIn-SingUp{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #07080a;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 25px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+    position: relative;
+}
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 35px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 87.5%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #071a3a;
+}
+.button{
+    border: 2% ;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    background:  #071a3a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    left:25%;
+}
+.button:hover{
+    border: 2%;
+    color: #071a3a;
+    background: white;
+    border-radius: 10px;
+}
+.P-log{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: rgb(6, 14, 85);
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.menu_cls {
+    background-color: #071a3a;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.menu_cls li{
+    display: inline-block;
+    padding: 15px;
+}
+
+.menu_cls a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu_cls a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #071a3a;
+    padding: 16px;
+}
+
+/* ASIDE */
+
+.main_cls {
+    background-color: #071a3a;
+    border: 0px solid rgba(0, 0, 0, 0.247);
+    float: left;
+}
+
+.aside_cls {
+    width: 15%;
+    float: left;
+}
+.aside_cls h3 {
+    color: white;
+    padding: 10px;
+}
+.aside_cls ul {
+    padding: 0px, 0px;
+}
+
+ /* Imagenes del Aside*/
+
+#RS1, #RS2, #RS3, #RS4{
+    display: block;
+    margin-left: 12px;
+}
+
+/* Sección de texto principal */
+
+.H_Bienvenida{
+    color: #071a3a;
+}
+.section_cls {
+    background-color: #ffffff;
+    width: 85%;
+    float: left;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+.section_cls h2{
+    padding-left: 20px;
+}
+
+.P-Principal, .P-Principal h2 {
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: justify;
+}
+
+/* Pie de Pagina */
+
+.footer_cls {
+    background-color: #071a3a;
+}
+
+.footer_cls h4 {
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* PRODUCTOS */
+
+.SEC_PRODUC{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.SEC_PRODUC h1{
+  width: 100%;
+  color: #999;
+  font-family: monospace;
+}
+.tarjeta{
+  padding-left: 40px;
+  width: 24%;
+}
+.estilo-a{
+    font-family: sans-serif;
+}
+.estilo-a a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.estilo-a a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+  .estilo-a .img-container{
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+}
+.estilo-a .img-container img{
+    width: 95%;
+    position: absolute;
+    top: 0%;
+    transition: all 0.5s;
+}
+.estilo-a:hover .img-container img{
+    transform: scale(1.2);
+}
+.A_Carrito c{
+    display: inline-block;
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: #071a3a;
+    padding: 15px;
+    border: 1px solid #071a3a;
+    border-radius: 20px;
+}
+.A_Carrito c:hover{
+    color: #071a3a;
+    background-color: transparent;
+    border: 1px solid #071a3a;
+    border-radius: 20px;
+}
+
+
+/* PRODUCTO MAS VENDIDO*/
+
+.SEC_PRODUC{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.SEC_PRODUC h1{
+    width: 100%;
+    color: #999;
+    font-family: monospace;
+}
+.tarjeta-producven{
+    padding-left: 40px;
+    width: 24%;
+}
+.estilo-b{
+      font-family: sans-serif;
+}
+.estilo-b a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+}
+  .estilo-b a:hover{
+      text-decoration: underline;
+      cursor: pointer;
+}
+.estilo-b .img-container{
+      overflow: hidden;
+      position: relative;
+}
+.estilo-b .img-container img{
+      width: 95%;
+}
+.estilo-b .img-container .price{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: #ff1100;
+  padding: 15px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
